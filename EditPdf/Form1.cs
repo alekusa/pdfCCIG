@@ -16,5 +16,18 @@ namespace EditPdf
         {
             InitializeComponent();
         }
+        String archivo = "";
+        private void abrirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openArchivo = new OpenFileDialog();
+            openArchivo.Filter = "SOLO PDF | *.pdf"; //filtro solo PDF.
+            openArchivo.ShowDialog();
+            archivo = openArchivo.FileName;
+            if (archivo != "")
+            {
+                visorPDF.LoadFile(archivo);
+            }
+
+        }
     }
 }
