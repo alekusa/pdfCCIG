@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.btnCarpeta = new System.Windows.Forms.Button();
-            this.strPatch = new System.Windows.Forms.Label();
             this.cmbOP = new System.Windows.Forms.ComboBox();
+            this.txtPatch = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // btnCarpeta
@@ -44,40 +44,46 @@
             this.btnCarpeta.UseVisualStyleBackColor = true;
             this.btnCarpeta.Click += new System.EventHandler(this.btnCarpeta_Click);
             // 
-            // strPatch
-            // 
-            this.strPatch.AutoSize = true;
-            this.strPatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.strPatch.Location = new System.Drawing.Point(161, 15);
-            this.strPatch.Name = "strPatch";
-            this.strPatch.Size = new System.Drawing.Size(72, 24);
-            this.strPatch.TabIndex = 1;
-            this.strPatch.Text = "carpeta";
-            // 
             // cmbOP
             // 
             this.cmbOP.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbOP.FormattingEnabled = true;
             this.cmbOP.Items.AddRange(new object[] {
-            "SG Alexis KUSEMAN",
-            "SG Hector STANG",
-            "SI Nicolas FIGUEREDO"});
-            this.cmbOP.Location = new System.Drawing.Point(13, 62);
+            "SG KUSEMAN Alexis ",
+            "SG STANG Hector",
+            "SI FIGUEREDO Diego",
+            "SG CRUZ Dionicio",
+            "CI TORANZO Alberto",
+            "CI ROMANO Leonardo",
+            "SA ISLEÑO Claudia",
+            "SA RAMIREZ Betiana"});
+            this.cmbOP.Location = new System.Drawing.Point(13, 85);
             this.cmbOP.Name = "cmbOP";
-            this.cmbOP.Size = new System.Drawing.Size(133, 28);
+            this.cmbOP.Size = new System.Drawing.Size(220, 28);
             this.cmbOP.TabIndex = 2;
+            this.cmbOP.TextChanged += new System.EventHandler(this.cmbOP_TextChanged);
+            // 
+            // txtPatch
+            // 
+            this.txtPatch.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPatch.Location = new System.Drawing.Point(13, 53);
+            this.txtPatch.Name = "txtPatch";
+            this.txtPatch.Size = new System.Drawing.Size(867, 22);
+            this.txtPatch.TabIndex = 3;
+            this.txtPatch.TextChanged += new System.EventHandler(this.txtPatch_TextChanged);
             // 
             // Configuracion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(604, 207);
+            this.ClientSize = new System.Drawing.Size(886, 123);
+            this.Controls.Add(this.txtPatch);
             this.Controls.Add(this.cmbOP);
-            this.Controls.Add(this.strPatch);
             this.Controls.Add(this.btnCarpeta);
             this.Name = "Configuracion";
             this.Text = "Configuracion";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Configuracion_FormClosed);
+            this.Load += new System.EventHandler(this.Configuracion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,7 +92,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCarpeta;
-        public System.Windows.Forms.Label strPatch;
         public System.Windows.Forms.ComboBox cmbOP;
+        public System.Windows.Forms.TextBox txtPatch;
     }
 }
