@@ -38,10 +38,10 @@ namespace EditPdf
                         var contentByte = writer.DirectContent;
                         contentByte.BeginText();
                         contentByte.SetFontAndSize(baseFont, 12);
-                        contentByte.ShowTextAligned(1, "CENTRO DE COMUNICACIONES E INFORMÁTICA GUARNICIONAL \"CÓRDOBA\"", 300, 830, 0);
-                        contentByte.ShowTextAligned(PdfContentByte.ALIGN_CENTER, OP, 100, 795, 0);
-                        contentByte.ShowTextAligned(1, "NC CCIG: " + NumeroDeControl, 515, 780, 0);
-                        contentByte.ShowTextAligned(PdfContentByte.ALIGN_CENTER, dato, 100, 780, 0);
+                        contentByte.ShowTextAligned(1, "CCIG \"CÓRDOBA\"", 100, 830, 0);
+                        contentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, OP, 35, 795, 0);
+                        contentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, "NC CCIG: " + NumeroDeControl, 35, 810, 0);
+                        contentByte.ShowTextAligned(PdfContentByte.ALIGN_LEFT, dato, 35, 780, 0);
                         contentByte.EndText();
                         contentByte.AddTemplate(importedPage, 0, 0);
 

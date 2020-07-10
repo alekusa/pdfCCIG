@@ -53,7 +53,7 @@
             this.guardarToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(908, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(909, 28);
             this.menuStrip1.TabIndex = 3;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -86,7 +86,7 @@
             this.visorPDF.Location = new System.Drawing.Point(0, 28);
             this.visorPDF.Name = "visorPDF";
             this.visorPDF.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("visorPDF.OcxState")));
-            this.visorPDF.Size = new System.Drawing.Size(908, 422);
+            this.visorPDF.Size = new System.Drawing.Size(909, 422);
             this.visorPDF.TabIndex = 5;
             // 
             // tb_nc
@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(908, 450);
+            this.ClientSize = new System.Drawing.Size(909, 450);
             this.Controls.Add(this.tb_promotor);
             this.Controls.Add(this.tb_nt);
             this.Controls.Add(this.label3);
@@ -157,6 +157,7 @@
             this.Controls.Add(this.tb_nc);
             this.Controls.Add(this.visorPDF);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "PDF\'s CCIG \"Córdoba\" v 0.4";
